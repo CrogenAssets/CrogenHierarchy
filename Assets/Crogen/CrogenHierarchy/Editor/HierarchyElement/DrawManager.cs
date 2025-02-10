@@ -104,9 +104,9 @@ namespace Crogen.CrogenHierarchy.Editor.HierarchyElement
                                     BindingFlags.Static | BindingFlags.NonPublic);
                                 Texture2D texture = _loadIconMethodInfo?.Invoke(null, new object[] 
                                     { $"{components[i].GetType().Name} Icon" }) as Texture2D;
-                                
-                                //패키지 정의 컴포넌트
-                                if (texture == null)
+
+								//패키지 정의 컴포넌트
+								if (texture == null)
                                 {
                                     var item = MonoScript.FromMonoBehaviour(components[i] as MonoBehaviour);
                                     string path = AssetDatabase.GetAssetPath(item);

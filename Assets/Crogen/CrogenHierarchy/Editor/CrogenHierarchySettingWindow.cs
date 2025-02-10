@@ -74,8 +74,7 @@ namespace Crogen.CrogenHierarchy.Editor
                     {
                         GUILayout.BeginHorizontal();
                         
-                        activeIcons[i] =
-                            EditorGUILayout.Toggle(activeIcons[i]);
+                        activeIcons[i] = EditorGUILayout.Toggle(activeIcons[i]);
                         
                         GUILayout.EndHorizontal();
                     }
